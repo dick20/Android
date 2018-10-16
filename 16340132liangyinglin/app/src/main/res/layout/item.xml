@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <TextView
+            android:id="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:background="@drawable/my_circle"
+            android:text="F"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/recipeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_alignBaseline="@+id/img"
+            android:layout_toRightOf="@+id/img"
+            android:layout_marginLeft="20dp"
+            android:text="food"
+            android:textSize="30dp"
+            android:textColor="#000000"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

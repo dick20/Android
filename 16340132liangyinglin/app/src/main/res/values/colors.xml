@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorSelect">#3F51B5</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="soy">#BB4C3B</color>
+    <color name="veg">#C48D30</color>
+    <color name="milk">#4469B0</color>
+    <color name="fish">#20A17B</color>
+    <color name="mushrooms">#BB4C3B</color>
+    <color name="potato">#4469B0</color>
+    <color name="carrot">#20A17B</color>
+    <color name="buckwheat">#BB4C3B</color>
+    <color name="egg">#C48D30</color>
+</resources>
