@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <TextView android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:src="@mipmap/sysu"
+        app:layout_constraintBottom_toTopOf="@+id/search_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <EditText
+        android:id="@+id/search_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:hint="@string/search_content"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/but1"
+        app:layout_constraintTop_toBottomOf="@id/image" />
+
+    <Button
+        android:id="@+id/but1"
+        style="@style/search_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/search_button"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/search_content">
+
+        <RadioButton
+            android:id="@+id/selection1"
+            style="@style/MyRadioButton"
+            android:layout_height="match_parent"
+            android:checked="true"
+            android:text="@string/selection1" />
+
+        <RadioButton
+            android:id="@+id/selection2"
+            style="@style/MyRadioButton"
+            android:text="@string/selection2" />
+
+        <RadioButton
+            android:id="@+id/selection3"
+            style="@style/MyRadioButton"
+            android:text="@string/selection3" />
+
+        <RadioButton
+            android:id="@+id/selection4"
+            style="@style/MyRadioButton"
+            android:text="@string/selection4" />
+    </RadioGroup>
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/widget_margin">
+
+    <ImageView
+        android:id="@+id/appwidget_star"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@mipmap/full_star"
+        android:scaleType="fitXY"
+        />
+
+    <TextView
+        android:id="@+id/appwidget_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_alignBottom="@id/appwidget_star"
+        android:contentDescription="当前没有任何信息"
+        android:text="当前没有任何信息"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:textStyle="bold|italic" />
+
+</RelativeLayout>
