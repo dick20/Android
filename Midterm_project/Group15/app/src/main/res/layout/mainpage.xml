@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="view.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimaryLight"
+            android:layout_height="0dp">
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_marginHorizontal="10dp"
+            android:id="@+id/searchBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="5"
+            android:layout_below="@+id/toolbar">
+
+            <EditText
+
+                android:id="@+id/searchInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:hint="搜索" />
+
+            <Button
+                android:id="@+id/searchButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="搜索"
+                app:layout_constraintLeft_toRightOf="@+id/searchInput" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/select"
+            android:layout_marginHorizontal="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/searchBox"
+            android:weightSum="5"
+            app:layout_constraintTop_toBottomOf="@+id/searchBox">
+
+            <Spinner
+                android:id="@+id/selectType"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:dropDownWidth="100dp"
+                android:layout_weight="2"
+                />
+
+
+            <Spinner
+                android:id="@+id/rankType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/rankType"
+                android:layout_weight="2"/>
+
+            <TextView
+                android:id="@+id/arrow"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:background="@drawable/arrow"/>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/ReView"
+            android:layout_marginHorizontal="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/select">
+
+        </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+
+</FrameLayout>

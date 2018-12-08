@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="type">
+        <item>角色</item>
+        <item>射手</item>
+        <item>辅助</item>
+        <item>法师</item>
+        <item>战士</item>
+        <item>坦克</item>
+    </string-array>
+    <string-array name="rankType">
+        <item>默认排序</item>
+        <item>难度</item>
+    </string-array>
+    <string-array name="equip_RankType">
+    <item>默认排序</item>
+    <item>价格</item>
+    </string-array>
+    <string-array name="equipType">
+        <item>属性</item>
+        <item>打野</item>
+        <item>攻击</item>
+        <item>法术</item>
+        <item>防御</item>
+        <item>移动</item>
+        <item>辅助</item>
+    </string-array>
+</resources>

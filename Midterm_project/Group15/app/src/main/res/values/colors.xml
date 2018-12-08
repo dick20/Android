@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="skyblue">#49A0E3</color>
+    <color name="green">#39FE3D</color>
+    <color name="brown">#DD9F33</color>
+    <color name="grey">#F5F5FF</color>
+    <color name="red">#E84A33</color>
+    <color name="darkgreen">#5DD473</color>
+    <color name="yellow">#E7CA63</color>
+    <color name="mint">#4DE2C7</color>
+    <color name="material_drawer_background">@color/md_white_1000</color>
+    <color name="material_drawer_primary_text">@color/md_grey_800</color>
+    <color name="material_drawer_secondary_text">@color/md_grey_800</color>
+    <color name="material_drawer_hint_text">@color/material_drawer_dark_hint_text</color>
+    <color name="material_drawer_divider">@color/md_grey_600</color>
+    <color name="material_drawer_selected_text">@color/md_white_1000</color>
+    <color name="material_drawer_header_selection_text">@color/material_drawer_dark_primary_text
+    </color>
+</resources>

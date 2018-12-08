@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/head"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="5dp"
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        android:src="@mipmap/me"/>
+    <TextView
+        android:layout_width="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/head"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:text="Amy"
+        android:id="@+id/name"
+        android:textSize="20sp"
+        android:textColor="#7a7a7a"
+        />
+
+    <TextView
+        android:id="@+id/time"
+        android:text="2018-11-02 11:12:18"
+        app:layout_constraintLeft_toRightOf="@+id/head"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        android:layout_marginLeft="10dp"
+        android:textSize="10sp"
+        android:textColor="#7a7a7a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/content"
+        android:text="Hi~"
+        app:layout_constraintLeft_toRightOf="@+id/head"
+        app:layout_constraintTop_toBottomOf="@+id/time"
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp"
+        android:textColor="#3e3e3e"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/num"
+        android:textSize="15sp"
+        android:text="0"
+        app:layout_constraintRight_toLeftOf="@id/like_img"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/like_img"
+        app:layout_constraintRight_toRightOf="parent"
+        android:focusable="false"
+        android:layout_width="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="20sp"
+        android:src="@mipmap/white"/>
+
+
+</android.support.constraint.ConstraintLayout>

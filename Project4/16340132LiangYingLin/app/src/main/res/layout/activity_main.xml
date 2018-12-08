@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/img"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:text="中山大学合唱团"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="15sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/singer" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/singer"
+        android:text="山高水长"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/profile_image"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/starttime"
+        android:text="00:00"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/singer"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15sp"/>
+
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintLeft_toRightOf="@id/starttime"
+        app:layout_constraintTop_toBottomOf="@id/singer"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/seekbar"
+        app:layout_constraintTop_toBottomOf="@id/singer"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/endtime"
+        android:text="03:45"
+        />
+
+    <ImageButton
+        android:id="@+id/file"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:background="#ffffff"
+        android:layout_marginTop="30dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/file"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/seekbar" />
+
+    <ImageButton
+        android:id="@+id/begin"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="40dp"
+        android:background="#ffffff"
+        android:scaleType="centerCrop"
+        android:src="@drawable/play"
+        app:layout_constraintLeft_toRightOf="@id/file"
+        app:layout_constraintTop_toBottomOf="@id/seekbar" />
+
+    <ImageButton
+        android:id="@+id/stop"
+        android:layout_width="50dp"
+        android:background="#ffffff"
+        android:layout_height="50dp"
+        android:layout_marginLeft="25dp"
+        android:scaleType="fitXY"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/stop"
+        app:layout_constraintLeft_toRightOf="@id/begin"
+        app:layout_constraintTop_toBottomOf="@id/seekbar" />
+
+    <ImageButton
+        android:id="@+id/exit"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="25dp"
+        android:background="#ffffff"
+        android:scaleType="centerCrop"
+        android:src="@drawable/back"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/seekbar" />
+
+
+</android.support.constraint.ConstraintLayout>
