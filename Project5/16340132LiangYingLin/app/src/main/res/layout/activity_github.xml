@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".GithubActivity">
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/input_github"
+        android:hint="input user_name"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/search_github"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_github"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="搜索"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView_github"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/input_github"
+        android:layout_marginTop="50dp"
+        android:layout_height="match_parent"/>
+
+
+
+</android.support.constraint.ConstraintLayout>

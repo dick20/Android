@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        app:cardCornerRadius="8dp"
+        android:layout_width="match_parent"
+        app:cardBackgroundColor = "#98ded3"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:contentPadding="5dp">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/title_list"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/title_str"
+                    android:text="Title: "
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/title"
+                    android:textSize="18dp"
+                    android:text="test1"
+                    android:textColor="#000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/create_time_str"
+                android:text="创建时间："
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/title_list"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:id="@+id/create_time"
+                android:text="2018-12-11 T11:38:01Z"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textColor="#000000"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toRightOf="@id/create_time_str"
+                app:layout_constraintTop_toBottomOf="@id/title_list"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:id="@+id/issue_state_st2"
+                android:text="问题状态："
+                android:textColor="#000000"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/create_time_str"
+                />
+
+            <TextView
+                android:id="@+id/issue_state"
+                android:textColor="#000000"
+                android:text="open"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toRightOf="@id/issue_state_st2"
+                app:layout_constraintTop_toBottomOf="@id/create_time"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:id="@+id/introduction_str"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="问题描述："
+                android:textColor="#000000"
+                app:layout_constraintTop_toBottomOf="@id/issue_state"/>
+
+            <TextView
+                android:id="@+id/introduction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="test111"
+                android:textColor="#000000"
+                app:layout_constraintTop_toBottomOf="@id/issue_state"
+                app:layout_constraintLeft_toRightOf="@id/introduction_str"
+                />
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="#888888"
+        />
+
+</LinearLayout>
