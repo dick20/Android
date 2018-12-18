@@ -29,6 +29,22 @@
 + 学会使用Service与Activity进行通信
 + 学习rxJava，使用rxJava更新UI
 
+## 实验五：WEB API
+
+### (访问b站数据，访问github仓库与讨论)
+
++ 学会使用HttpURLConnection
++ 请求访问Web服务学习Android线程机制
++ 学会线程更新UI学会解析JSON数据
++ 学习CardView布局技术
+
++ 理解Restful接口
++ 学会使用Retrofit2
++ 复习使用RxJava
++ 学会使用OkHttp
+
+
+
 ### 期中项目： 王者荣耀英雄大全
 
 + 王者荣耀英雄人物的增删改查功能。属性包含头像、称号、名字、位置、生存能力值、攻击伤害值、技能效果值、上手难度值等，其中头像是图片
