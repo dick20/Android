@@ -73,7 +73,6 @@ public class GithubActivity extends AppCompatActivity {
                 Bundle bundle = new Bundle();
                 bundle.putString("repoName",list.get(position).getName());
                 bundle.putString("userName",userName);
-                bundle.putBoolean("hasIssue",list.get(position).getHas_issues());
 
                 intent.setClass(GithubActivity.this,IssueActivity.class);
                 intent.putExtras(bundle);
@@ -116,14 +115,23 @@ public class GithubActivity extends AppCompatActivity {
 
                     @Override
                     public void onError(Throwable e) {
-                        Toast.makeText(GithubActivity.this,"无法找到该用户",Toast.LENGTH_SHORT).show();
+                        Log.i("sss",e.getMessage());
+                        if (e.getMessage().equals("Unable to resolve host \"api.github.com\": No address associated with hostname"))
+                            Toast.makeText(GithubActivity.this,"HTTP 404:网络连接异常",Toast.LENGTH_SHORT).show();
+                        else
+                            Toast.makeText(GithubActivity.this,"无法找到该用户",Toast.LENGTH_SHORT).show();
+                        e.printStackTrace();
                     }
 
                     @Override
                     public void onNext(List<Repo> repos) {
                         for (int i = 0; i < repos.size(); i++){
                             Log.i("list",repos.get(i).getName());
-                            list.add(repos.get(i));
+                            if(repos.get(i).getHas_issues())
+                                list.add(repos.get(i));
+                        }
+                        if (repos.isEmpty()){
+                            Toast.makeText(GithubActivity.this,"该用户没有任何Repo",Toast.LENGTH_SHORT).show();
                         }
                         adapter.notifyDataSetChanged();
                     }
@@ -132,7 +140,7 @@ public class GithubActivity extends AppCompatActivity {
     }
 
     public interface GitHubService {
-        @GET("users/{user_name}/repos")
+        @GET("/users/{user_name}/repos")
         Observable<List<Repo>> getRepo(@Path("user_name") String user_name);
     }
 

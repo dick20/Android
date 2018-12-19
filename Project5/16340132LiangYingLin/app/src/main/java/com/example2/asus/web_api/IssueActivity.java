@@ -58,7 +58,6 @@ public class IssueActivity extends AppCompatActivity {
         Bundle bundle=this.getIntent().getExtras();
         repoName = bundle.getString("repoName");
         userName = bundle.getString("userName");
-        Boolean hasIssue = bundle.getBoolean("hasIssue");
         Log.i("jump",repoName + " " + userName);
 
         // 显示recyclerView
@@ -69,15 +68,9 @@ public class IssueActivity extends AppCompatActivity {
         recyclerView.setAdapter(adapter);
 
         // 获取issue
-        Log.i("hasIssue",hasIssue.toString());
-        if (hasIssue){
-            request_issue(userName,repoName);
-            // 加分项，绑定按键监听器，post一个issue
-            bind_post_issue();
-        }
-        else{
-            Toast.makeText(IssueActivity.this,"该repo不存在issue",Toast.LENGTH_SHORT).show();
-        }
+        request_issue(userName,repoName);
+        // 加分项，绑定按键监听器，post一个issue
+        bind_post_issue();
     }
 
     private void bind_post_issue(){
@@ -139,7 +132,7 @@ public class IssueActivity extends AppCompatActivity {
 
                     @Override
                     public void onNext(Issue issue) {
-                        list.add(issue);
+                        list.add(0,issue);
                         adapter.notifyDataSetChanged();
                     }
                 });
@@ -193,7 +186,7 @@ public class IssueActivity extends AppCompatActivity {
 
     // https://api.github.com/repos/用户名/仓库名/issues
     public interface IssueService {
-        @GET("repos/{user_name}/{repo_name}/issues")
+        @GET("/repos/{user_name}/{repo_name}/issues")
             // 这里的List<Repo>即为最终返回的类型，需要保持一致才可解析
             // 之所以使用一个List包裹是因为该接口返回的最外层是一个数组
             // Call<List<Repo>> getRepo(@Path("user_name") String user_name);
@@ -201,7 +194,7 @@ public class IssueActivity extends AppCompatActivity {
         Observable<List<Issue>> getIssue(@Path("user_name") String user_name, @Path("repo_name") String repo_name);
 
         // 绑定个人Token用于测试,拼写错误authentication
-        @Headers("Authorization: token 9b1934ddbcb09f85961ce6be840d94ed52fb5632")
+        @Headers("Authorization: token e6115a109795c8a934ba54fd274f895fa47021c5")
         @POST("/repos/{user_name}/{repo_name}/issues")
         Observable<Issue> postIssue(@Path("user_name") String user_name,
                                           @Path("repo_name") String repo_name, @Body RequestBody requestBody);
