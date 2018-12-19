@@ -194,7 +194,11 @@ public class IssueActivity extends AppCompatActivity {
         Observable<List<Issue>> getIssue(@Path("user_name") String user_name, @Path("repo_name") String repo_name);
 
         // 绑定个人Token用于测试,拼写错误authentication
+<<<<<<< HEAD
         @Headers("Authorization: token e6115a109795c8a934ba54fd274f895fa47021c5")
+=======
+        @Headers("Authorization: token 9b1934ddbcb09f859xxxxxx632")
+>>>>>>> a1850c301a759a6689ced5671195a826e8bf1509
         @POST("/repos/{user_name}/{repo_name}/issues")
         Observable<Issue> postIssue(@Path("user_name") String user_name,
                                           @Path("repo_name") String repo_name, @Body RequestBody requestBody);
