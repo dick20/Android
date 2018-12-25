@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:background="#9B30FF"
+        android:layout_marginTop="25dp"
+        android:layout_height="140dp">
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:src="@drawable/arrow"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/rotate"
+            app:layout_constraintTop_toBottomOf="@id/arrow"
+            android:layout_marginLeft="120dp"
+            android:id="@+id/rotate_text"
+            android:text="旋转角度: "
+            android:layout_marginTop="30dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rotate"
+            app:layout_constraintLeft_toRightOf="@id/rotate_text"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintTop_toBottomOf="@id/arrow"
+            android:layout_marginTop="30dp"
+            android:text="107.95834"
+            />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:background="#CD5C5C"
+        android:layout_marginTop="40dp"
+        android:layout_height="90dp">
+
+        <TextView
+            android:id="@+id/longitude_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="140dp"
+            android:text="经度："
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="20dp"
+            android:id="@+id/longitude"
+            android:text="100.0"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintLeft_toRightOf="@id/longitude_text"
+            />
+
+        <TextView
+            android:id="@+id/latitude_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="140dp"
+            android:text="纬度："
+            app:layout_constraintTop_toBottomOf="@id/longitude_text"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/latitude"
+            android:text="100.0"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/longitude_text"
+            app:layout_constraintLeft_toRightOf="@id/latitude_text"
+            />
+
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>

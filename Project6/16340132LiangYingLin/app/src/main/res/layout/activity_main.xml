@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="130dp"
+        android:text="跳转"
+        android:textSize="50dp"
+        />
+    <ImageView
+        android:id="@+id/image_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/shake"/>
+    <ImageView
+        android:id="@+id/image_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/shake"/>
+</FrameLayout>
+</LinearLayout>
