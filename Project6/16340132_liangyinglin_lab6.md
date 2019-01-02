@@ -5,7 +5,7 @@
 |   年级   |        16        | 专业（方向） | 软件工程（计算机应用） |
 |   学号   |     16340132     |     姓名     |         梁颖霖         |
 |   电话   |   13680473185    |    Email     |      dic0k@qq.com      |
-| 开始日期 |      12/24       |   完成日期   |         12/25          |
+| 开始日期 |      12/24       |   完成日期   |          1/3           |
 
 ---
 
@@ -434,3 +434,285 @@ soundPool.play(soundId,1.0f,1.0f,1,1,1.0f);
 
 虽然这次实验是选做，但是本人对安卓开发方向也颇有兴趣，且传感器方面的内容在日常生活也是经常用到，所以就完成这一次的实验。实验过程并不难，主要也只是注册传感器，判断传感器返回数据，监听事件处理等等。遇到的困难多在动画与音效方面，以及一些权限的设置。这次不仅学习到传感器的用法，还对平移动画，旋转动画等有了一定的了解，更加清楚的了解活动生命周期。
 
+
+
+
+
+## 第十七周任务
+
+## 一、实验题目
+
+### 地图
+
+### 第十七周实验目的
+
+1. 接入百度地图API
+2. 掌握少量的百度地图API接口
+
+------
+
+## 二、实现内容
+
+#### 基于之前的应用，初始界面仍为摇一摇
+
+| ![img](https://gitee.com/dic0k/PersonalProject6/raw/master/manual/images/img5.png)跳转后的界面为百度地图 | ![img](https://gitee.com/dic0k/PersonalProject6/raw/master/manual/images/img6.png)地图定位在目前的经纬度，需要可以动态改变 |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![img](https://gitee.com/dic0k/PersonalProject6/raw/master/manual/images/img7.png)界面中心为箭头，指向是目前的朝向，可以利用上周代码得到的朝向，也需要动态改变 | ![img](https://gitee.com/dic0k/PersonalProject6/raw/master/manual/images/img8.png)左下角是一个按钮，当移动地图时需要变为空心，可以点击，点击后变为实心同时回到定位到目前位置 |
+| ![img](https://gitee.com/dic0k/PersonalProject6/raw/master/manual/images/img9.png)当拖动地图时，左下角会变为空心 | ![img](https://gitee.com/dic0k/PersonalProject6/raw/master/manual/images/img6.png)点击左下角按钮，回到目前位置 |
+
++ 该项目属于选作项目
++ 需要理解一定的百度地图API
++ 基础内容是显示地图，定位到目前位置，显示目前朝向共计三项，其中后两项可以利用之前的代码
++ 加分项即为左下角的按钮以及相应的事件监听处理。对流程还不清晰的可以查看demo
++ 需要的图片资源在manual里
+
+------
+
+## 三、课堂实验结果
+
+### (1)实验截图
+
+1.地图初始页面
+
+![1](C:\Users\asus\Desktop\PersonalProject6\report\Wednesday\16340132LiangYingLin\image\graph\1.png)
+
+2.改变经纬度
+
+![2](C:\Users\asus\Desktop\PersonalProject6\report\Wednesday\16340132LiangYingLin\image\graph\2.png)
+
+3.移动地图，左下方图标变化
+
+![3](C:\Users\asus\Desktop\PersonalProject6\report\Wednesday\16340132LiangYingLin\image\graph\3.png)
+
+4.点击左下方图标，显示回原位置
+
+![4](C:\Users\asus\Desktop\PersonalProject6\report\Wednesday\16340132LiangYingLin\image\graph\4.png)
+
+5.摇动手机，marker改变方向
+
+![5](C:\Users\asus\Desktop\PersonalProject6\report\Wednesday\16340132LiangYingLin\image\graph\5.png)
+
+
+
+![6](C:\Users\asus\Desktop\PersonalProject6\report\Wednesday\16340132LiangYingLin\image\graph\6.png)
+
+
+
+### (2)实验步骤以及关键代码
+
+#### a.引入百度地图的资源包
+
+网上教程一大把，这里也不再叙述。
+
+**主要步骤**为
+
++ 下载开发包
++ 复制so文件至src/main/jniLibs目录
++ 复制jar包至libs目录
++ 增加sourceSets
++ 增加依赖
++ 添加密钥
++ 添加权限
++ 使用地图
+
+#### b.添加地图到xml布局
+
+这里的页面仅需要显示一个地图的组件加上自己的一张图片即可，后面通过点击这张图片来与地图进行交互。
+
+```xml
+	<com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+
+    <ImageButton
+        android:id="@+id/imaage_button"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="fitXY"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/centerdirection"
+        />
+```
+
+#### C.根据经纬度显示地图，并设置marker
+
+这里的经纬度利用的是上周的LocationManager所获得的地址，但是**由于百度地图的api的地址计算并不与location的直接一致，故需要进行转换**，这一点在百度的api手册也有说明。以下是设置我的当前位置信息，需要设置角度，经度，纬度。
+
+```java
+//获取地图控件引用
+BaiduMap mBaiduMap = mMapView.getMap();
+
+mBaiduMap.setOnMapStatusChangeListener(onMapStatusChangeListener);
+//普通地图
+mBaiduMap.setMapType(BaiduMap.MAP_TYPE_NORMAL);
+mBaiduMap.setMyLocationEnabled(true);
+// 转换坐标
+CoordinateConverter converter = new CoordinateConverter();
+converter.from(CoordinateConverter.CoordType.GPS);
+converter.coord(new LatLng(loc.getLatitude(), loc.getLongitude()));
+LatLng desLatLng = converter.convert();
+// LatLng就是当前的坐标
+degree = 90.0f;
+mMapView.getMap().setMyLocationEnabled(true);
+MyLocationData data = new MyLocationData.Builder()
+    .latitude(desLatLng.latitude)
+    .longitude(desLatLng.longitude)
+    .direction(degree).build();
+mMapView.getMap().setMyLocationData(data);
+```
+
+然后，设置marker的图片与位置
+
+```java
+Bitmap bitmap = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(getResources(), R.drawable.pointer), 100, 100, true);
+BitmapDescriptor bitmapD = BitmapDescriptorFactory.fromBitmap(bitmap);
+MyLocationConfiguration config = new MyLocationConfiguration(MyLocationConfiguration.LocationMode.NORMAL, true, bitmapD);
+mMapView.getMap().setMyLocationConfiguration(config);
+```
+
+**设置地图居中显示**
+
+```java
+// 设置地图居中
+MapStatus mapStatus = new MapStatus.Builder().target(desLatLng).build();
+MapStatusUpdate mapStatusUpdate = 	 
+    MapStatusUpdateFactory.newMapStatus(mapStatus);
+mMapView.getMap().setMapStatus(mapStatusUpdate);
+```
+
+这一点很关键，没有设置居中显示，则地图默认显示中心在首都，这一点会导致我的marker看不到，误以为程序出问题，且不符合要求。
+
+#### d.判断手机转向时，改变marker的转向
+
+这一点与上一周的指针旋转类似，传感器不变，但是需要做的是改变marker的角度，即重新设置direction。
+
+```java
+MyLocationData data = new MyLocationData.Builder()
+                .latitude(desLatLng.latitude)
+                .longitude(desLatLng.longitude)
+                .direction(degree).build();
+```
+
+里面的degree就是我通过之前传感器获取的转向角度。
+
+#### e.判断位置改变时，改变地图和marker所处位置
+
+与改变角度一样，只不过这次改变的是经纬度。同样经纬度也是通过上周传感器的改变监听函数中获取即可。
+
+```java
+MyLocationData data = new MyLocationData.Builder()
+                .latitude(desLatLng.latitude)
+                .longitude(desLatLng.longitude)
+                .direction(degree).build();
+```
+
+#### f.判断地图的改变状态，以此改变左下角的图片
+
+这里利用的是百度地图的地图状态改变监听器。
+
+我设置当状态改变完毕后，若当前状态与经纬度的状态不一致，则证明偏离了中心，所以改变图片的样式。同样，当点击图片，仅需返回到原来的状态即可，并将图片设置回实心。
+
+```java
+// 设置imageButton的点击函数
+imageButton.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        // 转换坐标
+        CoordinateConverter converter = new CoordinateConverter();
+        converter.from(CoordinateConverter.CoordType.GPS);
+        converter.coord(new LatLng(loc.getLatitude(), loc.getLongitude()));
+        LatLng desLatLng = converter.convert();
+        // 设置地图居中
+        MapStatus mapStatus = new MapStatus.Builder().target(desLatLng).build();
+        MapStatusUpdate mapStatusUpdate = MapStatusUpdateFactory.newMapStatus(mapStatus);
+        mMapView.getMap().setMapStatus(mapStatusUpdate);
+
+        // 更改图片
+        imageButton.setImageResource(R.drawable.centerdirection);
+    }
+});
+```
+
+以下是百度地图的状态监听器：
+
+```java
+// 地图改变的监听函数
+onMapStatusChangeListener = new BaiduMap.OnMapStatusChangeListener() {
+    /**
+             * 手势操作地图，设置地图状态等操作导致地图状态开始改变。
+             * @param status 地图状态改变开始时的地图状态
+             */
+    public void onMapStatusChangeStart(MapStatus status){
+    }
+
+    /** 因某种操作导致地图状态开始改变。
+             * @param status 地图状态改变开始时的地图状态
+             * @param reason表示地图状态改变的原因，取值有：
+             * 1：用户手势触发导致的地图状态改变,比如双击、拖拽、滑动底图
+             * 2：SDK导致的地图状态改变, 比如点击缩放控件、指南针图标
+             * 3：开发者调用,导致的地图状态改变
+             */
+    public void onMapStatusChangeStart(MapStatus status, int reason){
+    }
+
+    /**
+         * 地图状态变化中
+         * @param status 当前地图状态
+         */
+    public void onMapStatusChange(MapStatus status){
+    }
+
+    /**
+         * 地图状态改变结束
+         * @param status 地图状态改变结束后的地图状态
+         */
+    public void onMapStatusChangeFinish(MapStatus status){
+        // 转换坐标
+        CoordinateConverter converter = new CoordinateConverter();
+        converter.from(CoordinateConverter.CoordType.GPS);
+        converter.coord(new LatLng(loc.getLatitude(), loc.getLongitude()));
+        LatLng desLatLng = converter.convert();
+        // 判断两个状态是否一致
+        MapStatus mapStatus = new MapStatus.Builder().target(desLatLng).build();
+        Log.i("change","map has changed");
+        if(!status.equals(mapStatus)){
+            imageButton.setImageResource(R.drawable.definelocation);
+        }
+    }
+};
+```
+
+在初始化地图的时候记得设置监听器即可。
+
+```java
+mBaiduMap.setOnMapStatusChangeListener(onMapStatusChangeListener);
+```
+
+
+
+### (3)实验遇到的困难以及解决思路
+
+#### a.地图加载出来后，仅显示在首都，并未根据经纬度改变
+
+这一点是由于我只设置了MyLocationData，并没有设置地图的Status导致的。地图的位置信息已经在经纬度了，但是并没有居中显示。
+
+```java
+// 设置地图居中
+MapStatus mapStatus = new MapStatus.Builder().target(desLatLng).build();
+MapStatusUpdate mapStatusUpdate = 
+    MapStatusUpdateFactory.newMapStatus(mapStatus);
+mMapView.getMap().setMapStatus(mapStatusUpdate);
+```
+
+
+
+------
+
+## 四、实验思考及感想
+
+这次的实验也是在之前传感器的基础上添加百度地图功能，传感器部分的功能可以继续使用，只是需要学习一些百度地图的SDK。个人感觉地图与传感器这两个功能在日常的android开发都是离不开的，而想用好别人的地图SDK就要先看懂[官方的文档](http://lbsyun.baidu.com/index.php?title=androidsdk/guide/interaction/event)，这一点很重要。我在做实验过程一遇到缺少的功能或者函数，一般官方文档上也会有教程或者方法提供。
+
+最后一次安卓作业也做完了，虽然要求是选做，但是趁着自己有时间空余还是完成一下吧。安卓的学习并没有因此而终止，反而是另一种学习的开始，到此我已经基本掌握android的开发知识，要趁着寒假时间也加强一下自己的水平，期待在安卓开发能有更远的发展。Fighting!
