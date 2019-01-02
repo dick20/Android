@@ -148,14 +148,14 @@ public class MainActivity extends AppCompatActivity {
 
         downAnimationSet = new AnimationSet(true);
         //下面图片的动画
-        //1.先上移
+        //1.先下移
+        TranslateAnimation downDowntranslateAnimation = new TranslateAnimation(Animation.RELATIVE_TO_SELF, 0,
+                Animation.RELATIVE_TO_SELF, 0, Animation.RELATIVE_TO_SELF, 0, Animation.RELATIVE_TO_SELF, 0.5f);
+        //2.后上移
         TranslateAnimation downUptranslateAnimation = new TranslateAnimation(Animation.RELATIVE_TO_SELF, 0,
                 Animation.RELATIVE_TO_SELF, 0, Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 0);
         downUptranslateAnimation.setDuration(500);
         downUptranslateAnimation.setStartOffset(300);
-        //1.后下移
-        TranslateAnimation downDowntranslateAnimation = new TranslateAnimation(Animation.RELATIVE_TO_SELF, 0,
-                Animation.RELATIVE_TO_SELF, 0, Animation.RELATIVE_TO_SELF, 0, Animation.RELATIVE_TO_SELF, 0.5f);
         downDowntranslateAnimation.setDuration(500);
         downAnimationSet.addAnimation(downUptranslateAnimation);
         downAnimationSet.addAnimation(downDowntranslateAnimation);
