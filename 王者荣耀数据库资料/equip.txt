@@ -1,0 +1,96 @@
+equip_id	equip_name	attr	selling_price	buying_price	detail	unique_passive	img_url
+1111	铁剑	攻击	150	250	+20物理攻击	NULL	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1111.jpg
+1112	匕首	攻击	174	290	+10%攻击速度 	NULL	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1112.jpg
+1113	搏击拳套	攻击	192	320	+8%暴击率 	NULL	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1113.jpg
+1114	吸血之镰	攻击	246	410	+10物理攻击<br>+8%物理吸血	NULL	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1114.jpg
+1116	雷鸣刃	攻击	270	450	+40物理攻击	NULL	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1116.jpg
+1117	冲能拳套	攻击	330	550	+15%暴击率 	NULL	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1117.jpg
+1121	风暴巨剑	攻击	546	910	+80物理攻击 	NULL	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1121.jpg
+1122	日冕	攻击	474	790	+40物理攻击<br>+300最大生命 	唯一被动-残废：普通攻击有30%几率降低敌人20%移动速度，持续2秒	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1122.jpg
+1123	狂暴双刃	攻击	534	890	+15%攻击速度<br>+10%暴击率<br>+打野%移速	NULL	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1123.jpg
+1124	陨星	攻击	250	1080	+45物理攻击<br>+10%冷却缩减	唯一被动-切割：+60护甲穿透	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1124.jpg
+1125	破魔刀	攻击	910	2000	物理攻击+100<br>+50法术防御	唯一被动-破魔：增加等同于自身物理攻击40%的法术防御，最多增加300点	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1125.jpg
+1126	末世	攻击	1296	2160	+60物理攻击<br>+30%攻击速度 <br>+10%物理吸血	唯一被动-破败：普通攻击附带敌人当前生命值8%的物理伤害（对野怪最多：80）	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg
+1127	名刀?司命	攻击	1056	1760	+60物理攻击<br>+打野%冷却缩减	唯一被动-暗幕：免疫致命伤并免疫伤害、增加20%移动速度持续1秒近战/0.5秒远程，90秒冷却	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1127.jpg
+1128	冰霜长矛	攻击	1182	1980	+80物理攻击<br>+600最大生命 	唯一被动-碎冰：普通攻击会减少目标30%攻击速度和移动速度，持续2秒<br>远程英雄使用时减速效果持续时间衰减为1秒	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1128.jpg
+1129	速击之枪	攻击	534	890	+25%攻击速度	唯一被动-精准：普通攻击伤害提升30点，远程英雄使用时该效果翻倍。	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1129.jpg
+1131	碎星锤	攻击	1260	2100	+80物理攻击<br>+10%冷却缩减	唯一被动：+45%物理护甲穿透	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1131.jpg
+1132	泣血之刃	攻击	1044	1740	+100物理攻击<br>+25%物理吸血 	NULL	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1132.jpg
+1133	无尽战刃	攻击	1284	2140	+120物理攻击<br>+20%暴击率	唯一被动：+50%暴击效果	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg
+1134	宗师之力	攻击	1506	2100	+60物理攻击<br>+20%暴击率<br>+400 最大法力<br>+400最大生命	唯一被动-强击：使用技能后，2秒内提升自身8%移动速度，并使得下次普通攻击造成额外1.0*物理攻击的物理伤害，冷却时间：2秒	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1134.jpg
+1135	闪电匕首	攻击	1104	1840	+30%攻击速度<br>+20%暴击率<br>+8%移速	唯一被动-电弧：普通攻击有30%几率释放连锁闪电，对目标造成（100+0.3AD）点法术伤害（该效果有0.5秒CD），这个伤害可以暴击	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1135.jpg
+1136	影刃	攻击	1242	2070	+40%攻击速度<br>+20%暴击率<br>+打野%移速	唯一被动-暴风：暴击后提升自身30%攻击速度和10%移动速度，持续2秒	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg
+1137	暗影战斧	攻击	1254	2090	+85物理攻击<br>+15%冷却缩减<br>+500最大生命	唯一被动-切割：增加(50+英雄等级*10)点护甲穿透<br>唯一被动-残废：普通攻击有30%几率降低敌人20%移动速度，持续2秒	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg
+1138	破军	攻击	1770	2950	+200物理攻击 	唯一被动-破军：目标生命低于50%时伤害提高30%	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1138.jpg
+1154	穿云弓	攻击	660	1100	物理攻击+40<br>攻击速度+10%	NULL	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1154.jpg
+1155	破晓	攻击	2040	3400	物理攻击+50<br>攻击速度+35%<br>暴击率+15%	唯一被动-破甲：+22.打野%物理穿透（远程英雄使用时效果翻倍）<br>唯一被动：普通攻击伤害提升50点（远程英雄使用时效果翻倍）	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1155.jpg
+1211	咒术典籍	法术	180	300	+40法术攻击 	NULL	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1211.jpg
+1212	蓝宝石	法术	132	220	+300最大法力	NULL	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1212.jpg
+1213	炼金护符	法术	72	120	+10 每5秒回蓝 	NULL	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1213.jpg
+1214	圣者法典	法术	300	500	+20法术攻击<br>+8%冷却缩减 	NULL	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1214.jpg
+1216	元素杖	法术	324	540	+80法术攻击 	NULL	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1216.jpg
+1221	大棒	法术	492	820	+120法术攻击	NULL	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1221.jpg
+1222	血族之书	法术	744	1240	+75法术攻击<br>+10%冷却缩减	唯一被动-嗜血：增加20%法术吸血	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1222.jpg
+1223	光辉之剑	法术	468	730	+400最大生命<br>+400最大法力 	唯一被动-强击：使用技能后，5秒内的下一次普通攻击附加50%物理攻击（+30%法术加成）的法术伤害，这个效果有2秒的冷却时间	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1223.jpg
+1224	魅影面罩	法术	612	1020	+70法术攻击<br>+300最大生命	唯一被动：+75法术穿透	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1224.jpg
+1225	进化水晶	法术	432	720	+400最大法力<br>+400最大生命	唯一被动-英勇奖赏：升级后在3秒内回复20%生命与法力值	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1225.jpg
+1226	圣杯	法术	1218	1930	+180法术攻击<br>+15%冷却缩减<br>+25每5秒回蓝	唯一被动-法力源泉：每5秒恢复5%法力值	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1226.jpg
+1227	炽热支配者	法术	1170	1950	+180法术攻击<br>+600最大法力<br>+15 每5秒回蓝	唯一被动-法力护盾：生命值低于30%时，立刻获得一个吸收450-1500（+50%法术加成）伤害的护盾并提升30%移动速度，持续4秒，这个效果有90秒冷却时间	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1227.jpg
+1229	破碎圣杯	法术	540	900	+80法术攻击<br>+打野%冷却缩减<br>+20 每5秒回蓝	NULL	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1229.jpg
+1231	虚无法杖	法术	1266	2110	+180法术攻击<br>+500最大生命值	唯一被动：+45%法术穿透	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1231.jpg
+1232	博学者之怒	法术	1380	2300	+240法术攻击	唯一主动-毁灭：法术攻击提升35%	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1232.jpg
+1233	回响之杖	法术	1260	2100	+240法术攻击 <br>+辅助%移速 	唯一被动-回响：技能命中会触发小范围爆炸造成50（+50%法术加成）法术伤害，这个效果有5秒CD	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1233.jpg
+1234	冰霜法杖	法术	1260	2100	+150法术攻击 <br>+1050最大生命	唯一被动-结霜：英雄技能造成伤害会附带20%的减速效果，持续2秒	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1234.jpg
+1235	痛苦面具	法术	1224	2040	+140法术攻击<br>+打野%冷却缩减<br>+500最大生命	唯一被动-折磨：技能伤害会造成相当于目标当前生命值8%的法术伤害，这个效果有3秒CD（对野怪伤害上限：200）<br>唯一被动：+75法术穿透	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1235.jpg
+1236	巫术法杖	法术	1272	2120	+140法术攻击<br>+400最大生命<br>+400最大法力<br>+8%移速	唯一被动-强击：使用技能后，5秒内下一次普通攻击附加30%物理攻击（+80%法术加成）的法术伤害，这个效果有2秒冷却时间	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1236.jpg
+1237	时之预言	法术	1254	2090	+160法术攻击<br>+600最大法力<br>+800最大生命	唯一被动-英勇奖赏：升级后在3秒内回复20%生命值与法力值<br>唯一被动-守护：每5点法功提升1点物理和法术防御，最多提升200点	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1237.jpg
+1238	贤者之书	法术	1794	2990	+400法术攻击	唯一被动-刻印：增加1400点生命	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1238.jpg
+1239	辉月	法术	1194	1990	+160法术攻击<br>+10%冷却缩减	唯一主动-月之守护：90秒CD，免疫所有效果，不能移动、攻击和使用技能，持续1.5秒	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1239.jpg
+1240	噬神之书	法术	1254	2090	+180法术攻击<br>+10%冷却缩减<br>+800最大生命	唯一被动-嗜血：增加25%法术吸血	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg
+1311	红玛瑙	防御	180	300	+300最大生命	NULL	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1311.jpg
+1312	布甲	防御	132	220	+90物理防御	NULL	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1312.jpg
+1313	抗魔披风	防御	132	220	+90法术防御	NULL	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1313.jpg
+1314	提神水晶	防御	84	140	+30 每5秒回复	NULL	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1314.jpg
+1321	力量腰带	防御	540	900	+1000最大生命	NULL	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1321.jpg
+1322	熔炼之心	防御	540	900	+700最大生命	唯一被动-献祭：每秒对身边的敌军造成（60+英雄等级*法术）点法术伤害	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1322.jpg
+1323	神隐斗篷	防御	612	1020	+120法术防御<br>+700最大生命<br>+50每5秒回血	NULL	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1323.jpg
+1324	雪山圆盾	防御	540	900	+10%减CD<br>+400最大法力<br>+110物理防御	NULL	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1324.jpg
+1325	守护者之铠	防御	438	730	+210物理防御	唯一被动-寒铁：受到攻击会减少攻击者15%攻击速度，持续3秒	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1325.jpg
+1327	反伤刺甲	防御	882	1840	+40物理攻击<br>+420物理防御	唯一被动-荆棘：受到物理伤害时，会将伤害量的20%以法术伤害的形式回敬给对方。自身每20点物理防御属性提升1%该伤害（最多+100%）。攻击者距离越远，这个伤害越低，最多在距离800时衰减至70%	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1327.jpg
+1328	血魔之怒	防御	1272	2120	+20物理攻击<br>+1000最大生命	唯一被动-血怒：生命值低于30%时获得血怒，增加80点攻击，并获得最大生命值30%的护盾，持续8秒，这个效果有90秒CD	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1328.jpg
+1331	红莲斗篷	防御	1098	1830	+240物理防御<br>+1000最大生命	唯一被动-献祭：每秒对身边300范围内的敌人造成使用者最大生命值2%的法术伤害	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg
+1332	霸者重装	防御	1422	2070	+2000最大生命	唯一被动-复苏：脱离战斗后每秒回复3%最大生命值	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1332.jpg
+1333	不祥征兆	防御	1308	2180	+270物理防御<br>+1200最大生命	唯一被动-寒铁：受到攻击会减少攻击者30%攻击速度与15%移动速度，持续3秒	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1333.jpg
+1334	不死鸟之眼	防御	1260	2100	+100每5秒回血<br>+240法术防御<br>+1200最大生命	唯一被动-血统：每损失10%生命值，受到的所有治疗效果会额外增加6%。	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1334.jpg
+1335	魔女斗篷	防御	1272	2120	+360法术防御<br>+1000最大生命	唯一被动-迷雾：脱战3秒后获得一个吸收（200+英雄等级*120）点法术伤害的护盾	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1335.jpg
+1336	极寒风暴	防御	1260	2100	+20%冷却缩减<br>+500最大法力<br>+360物理防御	唯一被动-冰心：受到单次伤害超过当前生命值10%时触发寒冰冲击，对周围敌人造成（50+英雄等级*10）点法术伤害并降低其30%攻击和移动速度，持续2秒，这个效果有2秒内置CD	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1336.jpg
+1337	贤者的庇护	防御	1248	2080	+140物理防御<br>+140法术防御	唯一被动-复生：死亡后2秒原地复活，并获得（2000+英雄等级*100）点生命值，冷却时间：150秒。这个效果每局游戏只能触发2次	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1337.jpg
+1338	暴烈之甲	防御	1092	1950	+220物理防御<br>+1000最大生命	唯一被动-无畏：每次受到伤害后，自身造成的所有伤害提升2%并增加2%的移速，这个效果最高可以叠加5层，最多提升10%的伤害输出和10%移速，持续3秒	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1338.jpg
+1411	神速之靴	移动	150	250	唯一被动：+30移动速度	所有鞋类装备的移速加成效果不叠加	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1411.jpg
+1421	影忍之足	移动	414	710	+110物理防御	唯一被动：+60移动速度（所有鞋类装备的移速加成效果不叠加）<br>唯一被动：减少15%受到普通攻击的伤害	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg
+1422	抵抗之靴	移动	414	710	+110法术防御	唯一被动：+60移动速度（所有鞋类装备的移速加成效果不叠加）<br>唯一被动：+35%韧性	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg
+1423	冷静之靴	移动	426	710	+15%减CD	唯一被动-静谧：所有英雄技能的冷却恢复速度加快3%~10%（随英雄等级成长）这个效果对剩余冷却时间小于5秒的技能不会生效。<br>唯一被动：+60移动速度（所有鞋类装备的移速加成效果不叠加）	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg
+1424	秘法之靴	移动	474	710	唯一被动：+60移动速度（所有鞋类装备的移速加成效果不叠加）<br>唯一被动：+75法术穿透	NULL	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1424.jpg
+1425	急速战靴	移动	426	710	+30%攻速	唯一被动：+60移动速度（所有鞋类装备的移速加成效果不叠加）	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg
+1426	疾步之靴	移动	378	530	唯一被动-神行：脱离战斗后增加60移动速度<br>唯一被动：+60移动速度（所有鞋类装备的移速加成效果不叠加）	NULL	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1426.jpg
+1511	狩猎宽刃	打野	150	250	（打野刀升级后将惩戒技能替换为寒冰惩戒：寒冰惩戒可对英雄使用，造成伤害和减速效果）<br>必须携带惩击才可够买	必须被动唯一被动-打野：增加35%对野怪的伤害，击杀野怪获得经验提升20%	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1511.jpg
+1521	游击弯刀	打野	450	750	必须携带惩击才可够买，获得寒冰惩击效果	唯一被动-打野：增加45%对野怪的伤害，击杀野怪获得经验提升30%，击杀野怪获得的金币提升20%<br>唯一被动-磨砺：击杀野怪增加自身6点法术攻击，最多叠加20层	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1521.jpg
+1522	巡守利斧	打野	450	750	必须携带惩击才可够买，获得寒冰惩击效果	唯一被动-打野：增加45%对野怪的伤害，击杀野怪获得经验提升30%，击杀野怪获得的金币提升20%<br>唯一被动-磨砺：击杀野怪增加自身50点最大生命，最多叠加20层	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1522.jpg
+1523	追击刀锋	打野	450	750	必须携带惩击才可够买，获得寒冰惩击效果	唯一被动-打野：增加45%对野怪的伤害，击杀野怪获得经验提升30%，击杀野怪获得的金币提升20%<br>唯一被动-磨砺：击杀野怪增加自身2点物理攻击和0.打野%冷却缩减，最多叠加20层	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg
+1531	符文大剑	打野	894	1490	+100法术攻击<br>+400最大法力<br>必须携带惩击才可够买，获得寒冰惩击效果	唯一被动-强击：使用技能后，5秒内的下一次普通攻击附加50+0.打野*法术攻击的法术伤害，冷却时间：2秒<br>唯一被动-打野：增加45%对野怪的伤害，击杀野怪获得经验提升30%，击杀野怪获得的金币提升20%<br>唯一被动-磨砺：击杀野怪增加自身6点法术攻击，最多叠加30层	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1531.jpg
+1532	巨人之握	打野	900	1500	+800最大生命<br>必须携带惩击才可够买，获得寒冰惩击效果	唯一被动-献祭：每秒对身边300范围内的敌人造成（30+英雄等级*6）点法术伤害<br>唯一被动-打野：增加45%对野怪的伤害，击杀野怪获得经验提升30%，击杀野怪获得的金币提升20%<br>唯一被动-磨砺：击杀野怪增加自身50点最大生命，最多叠加30层	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1532.jpg
+1533	贪婪之噬	打野	876	1460	+40物理攻击<br>+15%攻击速度<br>+8%移速<br>必须携带惩击才可够买，获得寒冰惩击效果	唯一被动-打野：增加45%对野怪的伤害，击杀野怪获得经验提升30%，击杀野怪获得的金币提升20%<br>唯一被动-磨砺：击杀野怪增加自身2点物理攻击和0.打野%冷却缩减，最多叠加30层	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg
+1701	学识宝石	辅助	180	300	+移动速度+打野%	唯一被动-奉献：如果自己的经验或经济是己方最低，每3秒会额外获得5点经验或金币	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1701.jpg
+1711	凤鸣指环	辅助	642	1070	+移动速度+打野%<br>+生命值500	所有辅助装备的主动技能均为全队共享冷却时间<br>唯一被动-奉献：如果自己的经验或经济是己方最低，每3秒会额外获得5点经验或金币<br>唯一主动-鼓舞：45秒CD，为周围友方英雄增加30%攻击速度和10%冷却缩减，持续5秒	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1711.jpg
+1712	风之轻语	辅助	606	1010	+移动速度+打野%<br>+生命值500	所有辅助装备的主动技能均为全队共享冷却时间<br>唯一被动-奉献：如果自己的经验或经济是己方最低，每3秒会额外获得5点经验或金币<br>唯一主动-救援：60秒CD，立即为周围血量最低的友方英雄（包括自己）提供一个吸收（500+英雄等级*50）伤害的护盾，并提升其15%移动速度，持续3秒	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1712.jpg
+1713	风灵纹章	辅助	708	1180	+移动速度+打野%<br>+生命值500	所有辅助装备的主动技能均为全队共享冷却时间<br>唯一被动-奉献：如果自己的经验或经济是己方最低，每3秒会额外获得5点经验或金币<br>唯一主动-奔腾号令：60秒CD，增加周围所有友方英雄30%的移动速度，持续3秒	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1713.jpg
+1714	鼓舞之盾	辅助	726	1210	+移动速度+打野%<br>+生命值500	唯一被动-奉献：如果自己的经验或经济是己方最低，每3秒会额外获得5点经验或金币<br>唯一被动-军团：提升周围800范围友军(20+英雄等级*法术)点物理攻击和(40+英雄等级*移动)点法术攻击	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1714.jpg
+1721	极影	辅助	1146	1910	+移动速度+10%<br>+生命值1000	所有辅助装备的主动技能均为全队共享冷却时间<br>唯一被动-奉献：如果自己的经验或经济是己方最低，每3秒会额外获得5点经验或金币<br>唯一主动-鼓舞：45秒CD，为周围友方英雄增加50%攻击速度和20%冷却缩减，持续5秒	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1721.jpg
+1722	救赎之翼	辅助	1080	1800	+移动速度+10%<br>+生命值1000	所有辅助装备的主动技能均为全队共享冷却时间<br>唯一被动-奉献：如果自己的经验或经济是己方最低，每3秒会额外获得5点经验或金币<br>唯一主动-救援：60秒CD，立即为周围血量最低的友方英雄（包括自己）提供一个吸收（800+英雄等级*80）伤害的护盾，并提升其30%移动速度，持续3秒	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1722.jpg
+1723	奔狼纹章	辅助	1254	2090	+移动速度+10%<br>+生命值1000	所有辅助装备的主动技能均为全队共享冷却时间<br>唯一被动-奉献：如果自己的经验或经济是己方最低，每3秒会额外获得5点经验或金币<br>唯一主动-奔腾号令：60秒CD，增加周围所有友方英雄50%的移动速度，持续3秒	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1723.jpg
+1724	近卫荣耀	辅助	1206	2010	+移动速度+10%<br>+生命值1000	唯一被动-奉献：如果自己的经验或经济是己方最低，每3秒会额外获得5点经验或金币<br>唯一被动-军团：提升周围800范围友军(30+英雄等级*防御)点物理攻击和(60+英雄等级*6)点法术攻击	http://game.gtimg.cn/images/yxzj/img201606/itemimg/1724.jpg
+11210	制裁之刃	攻击	960	1800	+100物理攻击<br>+10%物理吸血 唯一被动-重伤：造成伤害使得目标的生命恢复效果减少50%，持续1.5秒（如果该伤害由普攻触发，则持续时间延长至3秒）	http://game.gtimg.cn/images/yxzj/img201606/itemimg/11210.jpg
+11311	纯净苍穹	攻击	1338	2230	+40%攻击速度<br>+20%暴击率	唯一被动-精准：普通攻击伤害提升35点，远程英雄使用时该效果翻倍。<br>唯一主动-驱散：90秒CD，受到的所有伤害降低50%，持续1.5秒，可以在被控制时使用。	http://game.gtimg.cn/images/yxzj/img201606/itemimg/11311.jpg
+12211	梦魇之牙	法术	1056	2050	+240法术攻击<br>+打野%移速	唯一被动-重伤：造成伤害使得目标的生命恢复效果减少50%，持续1.5秒（如果该伤害由普攻触发，则持续时间延长至3秒）	http://game.gtimg.cn/images/yxzj/img201606/itemimg/12211.jpg
+13310	冰痕之握	防御	1242	2020	+800最大生命<br>+500最大法力<br>+10%冷却缩减<br>+200物理防御	唯一被动-强击：使用技能后，5秒内的下一次普攻造成范围30%减速（远程英雄使用时减速效果衰减为20%）与（150+英雄等级*20）点物理伤害，这个效果有3秒的冷却时间	http://game.gtimg.cn/images/yxzj/img201606/itemimg/13310.jpg
+91040	逐日之弓	攻击	890	2100	攻击速度+25%<br>暴击+15%	唯一被动-精准：普通攻击伤害提升35点，远程英雄使用时该效果翻倍。<br>唯一主动-逐日：增加自己150点普攻射程和40%移动速度，持续5秒，CD60秒（仅对远程英雄生效）	http://game.gtimg.cn/images/yxzj/img201606/itemimg/91040.jpg
