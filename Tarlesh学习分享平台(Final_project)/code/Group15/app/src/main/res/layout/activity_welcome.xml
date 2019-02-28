@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="group15.android.tarlesh.WelcomeActivity">
+    <Button
+        android:id="@+id/Welcome_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:text="跳过 3s"
+        />
+
+    <TextView
+        android:id="@+id/Welcome_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="这是一个广告：欢迎选修Android开发课程"
+        android:textColor="#000000"
+        android:textSize="40sp"
+        android:gravity="center"/>
+
+</android.support.constraint.ConstraintLayout>
